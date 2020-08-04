@@ -1,0 +1,3 @@
+#gazebo
+source /usr/share/gazebo/setup.sh
+export GAZEBO_MODEL_PATH=/home/wys/gazebo/gazebo_models:${GAZEBO_MODEL_PATH}
