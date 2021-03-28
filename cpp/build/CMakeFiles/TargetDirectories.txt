@@ -1,0 +1,3 @@
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/rebuild_cache.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/pointer.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/edit_cache.dir
