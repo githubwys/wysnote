@@ -129,9 +129,11 @@ $$
 
 
 
-<img src="/home/tonglu/slam/wysnote/registration/3.24registration.assets/20190412195117945.png" alt="img" style="zoom: 67%;" />
+<img src="intrinsic_calib.assets/20190412195117945.png" alt="20190412195117945" style="zoom: 67%;" />
 
-<img src="/home/tonglu/slam/wysnote/registration/3.24registration.assets/20190412195329745.png" alt="img" style="zoom: 33%;" />
+
+
+<img src="intrinsic_calib.assets/20190412195329745.png" alt="20190412195329745" style="zoom: 33%;" />
 
 
 
@@ -141,15 +143,36 @@ $$
 
 H阵，为单应性矩阵3*3。9-1=8个参数
 
-利用<img src="/home/tonglu/slam/wysnote/registration/3.24registration.assets/20190412200120888.png" alt="img" style="zoom: 80%;" />，中r1，r2正交，模均为1的性质，求解h1，h2.
+利用<img src="intrinsic_calib.assets/20190412200120888.png" alt="20190412200120888" style="zoom:50%;" />，中r1，r2正交，模均为1的性质，求解h1，h2.
 
 剩余A阵中5个参数，通过3个单应性矩阵可以求解
 
-<img src="/home/tonglu/slam/wysnote/registration/3.24registration.assets/20190412202442196.png" alt="img" style="zoom: 50%;" />
+<img src="intrinsic_calib.assets/20190412202442196.png" alt="20190412202442196" style="zoom:50%;" />
 
-求解得：
 
-<img src="/home/tonglu/slam/wysnote/registration/3.24registration.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzY5OTI2,size_16,color_FFFFFF,t_70" alt="img" style="zoom:50%;" />
+
+可以看到，B是一个对称阵，所以B的有效元素为六个，让这六个元素写成向量b，即:
+$$
+b=\left[ \begin{array}{cccccc} B_{11} & B_{12} & B_{22} & B_{13} & B_{23} & B_{33} \end{array} \right]^T
+$$
+推导得到
+$$
+h_i^TBh_j = v^T_{ij}b \\
+v_{ij}=\left[ \begin{array}{cccccc} h_{i1}h_{j1} & h_{i1}h_{j2}+h_{i2}h_{j1} & h_{i2}h_{j2} & h_{i3}h_{j1}+h_{i1}h_{j3} & h_{i3}h_{j2}+h_{i2}h_{j3} & h_{i3}h_{j3} \end{array} \right]^T
+$$
+利用约束条件可以得到：
+$$
+\left[ \begin{array}{c} v^T_{12} \\ (v_{11}-v_{22})^T \end{array} \right]b=0
+$$
+通过上式，我们至少需要三幅包含棋盘格的图像，可以计算得到B，然后通过cholesky分解，得到相机的内参数矩阵A
+
+求解内参得：
+
+<img src="intrinsic_calib.assets/20190412203408957.png" alt="img" style="zoom:50%;" />
+
+外参：
+
+<img src="intrinsic_calib.assets/20190412203544463.png" alt="img" style="zoom:50%;" />
 
 （2）精度优化
 
@@ -159,7 +182,7 @@ H阵，为单应性矩阵3*3。9-1=8个参数
 
 n个棋盘，每个棋盘有m个点，每个点的误差独立同分布。
 
-![image-20210406131301686](/home/tonglu/slam/wysnote/registration/3.24registration.assets/3.24registration.md)
+<img src="intrinsic_calib.assets/20141102223901173" alt="img" style="zoom:50%;" />
 
 再使用LM求解
 
@@ -169,8 +192,9 @@ n个棋盘，每个棋盘有m个点，每个点的误差独立同分布。
 
 由于成像畸变主要由径向畸变导致，张氏标定法使用极大似然的思想对k1, k2进行了优化。优化方式同样采用可以采用Levenverg-Marquardt算法。
 
-![image-20210406152557982](/home/tonglu/slam/wysnote/registration/3.24registration.assets/image-20210406152557982.png)
-
+$$
+\sum^n_{i=1}\sum^m_{j=1} \| \hat{m}(K,k_1,k_2,R_i,t_i,M_{ij})-m_{ij} \|^2
+$$
 可以求出相机的畸变参数。
 
 用来对图像的进行畸变的矫正。
