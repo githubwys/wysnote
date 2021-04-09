@@ -4,6 +4,14 @@
 
 1、opencv、优点：程序可见
 
+内参标定
+
+https://github.com/linusyue/calibMono.git
+
+立体标定
+
+https://github.com/linusyue/calibStereo.git
+
 2、ros calibration、优点：标定过程可视化
 
 3、matlab、优点：直接使用matlab工具箱，最方便
