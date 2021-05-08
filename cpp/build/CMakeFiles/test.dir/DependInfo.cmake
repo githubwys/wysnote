@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tonglu/slam/wysnote/cpp/pointer.cpp" "/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/pointer.dir/pointer.cpp.o"
+  "/home/tonglu/slam/wysnote/cpp/test.cpp" "/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/test.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
