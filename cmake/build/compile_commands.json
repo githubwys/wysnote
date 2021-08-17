@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/tonglu/slam/wysnote/cmake/build",
+  "command": "/usr/bin/g++-7  -Dtestmath_EXPORTS -I/home/tonglu/slam/wysnote/cmake/include  -g -fPIC   -o CMakeFiles/testmath.dir/src/testmath.cpp.o -c /home/tonglu/slam/wysnote/cmake/src/testmath.cpp",
+  "file": "/home/tonglu/slam/wysnote/cmake/src/testmath.cpp"
+},
+{
+  "directory": "/home/tonglu/slam/wysnote/cmake/build",
+  "command": "/usr/bin/g++-7   -I/home/tonglu/slam/wysnote/cmake/include  -g   -o CMakeFiles/main.dir/src/main.cpp.o -c /home/tonglu/slam/wysnote/cmake/src/main.cpp",
+  "file": "/home/tonglu/slam/wysnote/cmake/src/main.cpp"
+}
+]

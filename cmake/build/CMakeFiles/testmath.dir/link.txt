@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -fPIC -g  -shared -Wl,-soname,libtestmath.so -o libtestmath.so CMakeFiles/testmath.dir/src/testmath.cpp.o 

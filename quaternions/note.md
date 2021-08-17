@@ -22,3 +22,7 @@ to be done :
 学习资料：继续知乎专栏：
 https://www.zhihu.com/people/krisyu
 旋转之九 - 李群与李代数https://zhuanlan.zhihu.com/p/87646716
+
+
+
+theta是逆时针，逆时针

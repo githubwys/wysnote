@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -fPIC -g  -shared -Wl,-soname,libmatchtemplate.so -o libmatchtemplate.so CMakeFiles/matchtemplate.dir/src/matchtemplate.cpp.o 

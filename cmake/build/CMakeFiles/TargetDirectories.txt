@@ -1,0 +1,4 @@
+/home/tonglu/slam/wysnote/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/tonglu/slam/wysnote/cmake/build/CMakeFiles/testmath.dir
+/home/tonglu/slam/wysnote/cmake/build/CMakeFiles/edit_cache.dir
+/home/tonglu/slam/wysnote/cmake/build/CMakeFiles/main.dir

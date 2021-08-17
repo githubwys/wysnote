@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/testmath.h
+math.h
+-
+
+/home/tonglu/slam/wysnote/cmake/src/testmath.cpp
+testmath.h
+/home/tonglu/slam/wysnote/cmake/src/testmath.h
+
