@@ -1,4 +1,11 @@
 /home/tonglu/slam/wysnote/cpp/build/CMakeFiles/rebuild_cache.dir
-/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/edit_cache.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/testqueue.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/testptr.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/main2.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/main.dir
 /home/tonglu/slam/wysnote/cpp/build/CMakeFiles/pointer.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/edit_cache.dir
 /home/tonglu/slam/wysnote/cpp/build/CMakeFiles/test.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/testinit.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/testformat.dir
+/home/tonglu/slam/wysnote/cpp/build/CMakeFiles/matchtemplate.dir

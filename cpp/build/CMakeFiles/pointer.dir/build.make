@@ -57,38 +57,38 @@ include CMakeFiles/pointer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pointer.dir/flags.make
 
-CMakeFiles/pointer.dir/pointer.cpp.o: CMakeFiles/pointer.dir/flags.make
-CMakeFiles/pointer.dir/pointer.cpp.o: ../pointer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tonglu/slam/wysnote/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pointer.dir/pointer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pointer.dir/pointer.cpp.o -c /home/tonglu/slam/wysnote/cpp/pointer.cpp
+CMakeFiles/pointer.dir/src/pointer.cpp.o: CMakeFiles/pointer.dir/flags.make
+CMakeFiles/pointer.dir/src/pointer.cpp.o: ../src/pointer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tonglu/slam/wysnote/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pointer.dir/src/pointer.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pointer.dir/src/pointer.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/pointer.cpp
 
-CMakeFiles/pointer.dir/pointer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pointer.dir/pointer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tonglu/slam/wysnote/cpp/pointer.cpp > CMakeFiles/pointer.dir/pointer.cpp.i
+CMakeFiles/pointer.dir/src/pointer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pointer.dir/src/pointer.cpp.i"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tonglu/slam/wysnote/cpp/src/pointer.cpp > CMakeFiles/pointer.dir/src/pointer.cpp.i
 
-CMakeFiles/pointer.dir/pointer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pointer.dir/pointer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tonglu/slam/wysnote/cpp/pointer.cpp -o CMakeFiles/pointer.dir/pointer.cpp.s
+CMakeFiles/pointer.dir/src/pointer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pointer.dir/src/pointer.cpp.s"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tonglu/slam/wysnote/cpp/src/pointer.cpp -o CMakeFiles/pointer.dir/src/pointer.cpp.s
 
-CMakeFiles/pointer.dir/pointer.cpp.o.requires:
+CMakeFiles/pointer.dir/src/pointer.cpp.o.requires:
 
-.PHONY : CMakeFiles/pointer.dir/pointer.cpp.o.requires
+.PHONY : CMakeFiles/pointer.dir/src/pointer.cpp.o.requires
 
-CMakeFiles/pointer.dir/pointer.cpp.o.provides: CMakeFiles/pointer.dir/pointer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/pointer.cpp.o.provides.build
-.PHONY : CMakeFiles/pointer.dir/pointer.cpp.o.provides
+CMakeFiles/pointer.dir/src/pointer.cpp.o.provides: CMakeFiles/pointer.dir/src/pointer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/src/pointer.cpp.o.provides.build
+.PHONY : CMakeFiles/pointer.dir/src/pointer.cpp.o.provides
 
-CMakeFiles/pointer.dir/pointer.cpp.o.provides.build: CMakeFiles/pointer.dir/pointer.cpp.o
+CMakeFiles/pointer.dir/src/pointer.cpp.o.provides.build: CMakeFiles/pointer.dir/src/pointer.cpp.o
 
 
 # Object files for target pointer
 pointer_OBJECTS = \
-"CMakeFiles/pointer.dir/pointer.cpp.o"
+"CMakeFiles/pointer.dir/src/pointer.cpp.o"
 
 # External object files for target pointer
 pointer_EXTERNAL_OBJECTS =
 
-pointer: CMakeFiles/pointer.dir/pointer.cpp.o
+pointer: CMakeFiles/pointer.dir/src/pointer.cpp.o
 pointer: CMakeFiles/pointer.dir/build.make
 pointer: CMakeFiles/pointer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tonglu/slam/wysnote/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pointer"
@@ -99,7 +99,7 @@ CMakeFiles/pointer.dir/build: pointer
 
 .PHONY : CMakeFiles/pointer.dir/build
 
-CMakeFiles/pointer.dir/requires: CMakeFiles/pointer.dir/pointer.cpp.o.requires
+CMakeFiles/pointer.dir/requires: CMakeFiles/pointer.dir/src/pointer.cpp.o.requires
 
 .PHONY : CMakeFiles/pointer.dir/requires
 

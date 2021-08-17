@@ -1,0 +1,55 @@
+[
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++   -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv -I../include  -g   -o CMakeFiles/testqueue.dir/src/testqueue.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/testqueue.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/testqueue.cpp"
+},
+
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++   -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv -I../include  -g   -o CMakeFiles/testptr.dir/src/testptr.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/testptr.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/testptr.cpp"
+},
+
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++   -I../include -isystem /home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -isystem /home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv  -g   -o CMakeFiles/main2.dir/src/main2.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/main2.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/main2.cpp"
+},
+
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++   -I../include -isystem /home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -isystem /home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv  -g   -o CMakeFiles/main.dir/src/main.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/main.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/main.cpp"
+},
+
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++   -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv -I../include  -g   -o CMakeFiles/pointer.dir/src/pointer.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/pointer.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/pointer.cpp"
+},
+
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++  -Dtest_EXPORTS -I../include -isystem /home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -isystem /home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv  -g -fPIC   -o CMakeFiles/test.dir/src/test.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/test.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/test.cpp"
+},
+
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++   -I../include -isystem /home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -isystem /home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv  -g   -o CMakeFiles/testinit.dir/src/testinit.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/testinit.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/testinit.cpp"
+},
+
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++   -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv -I../include  -g   -o CMakeFiles/testformat.dir/src/testformat.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/testformat.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/testformat.cpp"
+},
+
+{
+  "directory": "/home/tonglu/slam/wysnote/cpp/build",
+  "command": "/usr/bin/c++  -Dmatchtemplate_EXPORTS -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include -I/home/tonglu/pkg/opencv3.2/opencv-3.2.0/install/include/opencv -I../include  -g -fPIC   -o CMakeFiles/matchtemplate.dir/src/matchtemplate.cpp.o -c /home/tonglu/slam/wysnote/cpp/src/matchtemplate.cpp",
+  "file": "/home/tonglu/slam/wysnote/cpp/src/matchtemplate.cpp"
+}
+]

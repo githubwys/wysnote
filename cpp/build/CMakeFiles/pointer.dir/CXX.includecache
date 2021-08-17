@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tonglu/slam/wysnote/cpp/pointer.cpp
+/home/tonglu/slam/wysnote/cpp/src/pointer.cpp
 stdio.h
 -
 iostream

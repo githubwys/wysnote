@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pointer.dir/pointer.cpp.o"
+  "CMakeFiles/pointer.dir/src/pointer.cpp.o"
   "pointer.pdb"
   "pointer"
 )

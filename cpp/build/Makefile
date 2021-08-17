@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pointer
+# Target rules for targets named testqueue
 
 # Build rule for target.
-pointer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pointer
-.PHONY : pointer
+testqueue: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testqueue
+.PHONY : testqueue
 
 # fast build rule for target.
-pointer/fast:
-	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
-.PHONY : pointer/fast
+testqueue/fast:
+	$(MAKE) -f CMakeFiles/testqueue.dir/build.make CMakeFiles/testqueue.dir/build
+.PHONY : testqueue/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -136,59 +136,339 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-pointer.o: pointer.cpp.o
+#=============================================================================
+# Target rules for targets named matchtemplate
 
-.PHONY : pointer.o
+# Build rule for target.
+matchtemplate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matchtemplate
+.PHONY : matchtemplate
+
+# fast build rule for target.
+matchtemplate/fast:
+	$(MAKE) -f CMakeFiles/matchtemplate.dir/build.make CMakeFiles/matchtemplate.dir/build
+.PHONY : matchtemplate/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named testformat
+
+# Build rule for target.
+testformat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testformat
+.PHONY : testformat
+
+# fast build rule for target.
+testformat/fast:
+	$(MAKE) -f CMakeFiles/testformat.dir/build.make CMakeFiles/testformat.dir/build
+.PHONY : testformat/fast
+
+#=============================================================================
+# Target rules for targets named pointer
+
+# Build rule for target.
+pointer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pointer
+.PHONY : pointer
+
+# fast build rule for target.
+pointer/fast:
+	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
+.PHONY : pointer/fast
+
+#=============================================================================
+# Target rules for targets named testptr
+
+# Build rule for target.
+testptr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testptr
+.PHONY : testptr
+
+# fast build rule for target.
+testptr/fast:
+	$(MAKE) -f CMakeFiles/testptr.dir/build.make CMakeFiles/testptr.dir/build
+.PHONY : testptr/fast
+
+#=============================================================================
+# Target rules for targets named testinit
+
+# Build rule for target.
+testinit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testinit
+.PHONY : testinit
+
+# fast build rule for target.
+testinit/fast:
+	$(MAKE) -f CMakeFiles/testinit.dir/build.make CMakeFiles/testinit.dir/build
+.PHONY : testinit/fast
+
+#=============================================================================
+# Target rules for targets named main2
+
+# Build rule for target.
+main2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main2
+.PHONY : main2
+
+# fast build rule for target.
+main2/fast:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
+.PHONY : main2/fast
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
 
 # target to build an object file
-pointer.cpp.o:
-	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/pointer.cpp.o
-.PHONY : pointer.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-pointer.i: pointer.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : pointer.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-pointer.cpp.i:
-	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/pointer.cpp.i
-.PHONY : pointer.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-pointer.s: pointer.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : pointer.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-pointer.cpp.s:
-	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/pointer.cpp.s
-.PHONY : pointer.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-test.o: test.cpp.o
+src/main2.o: src/main2.cpp.o
 
-.PHONY : test.o
+.PHONY : src/main2.o
 
 # target to build an object file
-test.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
-.PHONY : test.cpp.o
+src/main2.cpp.o:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/src/main2.cpp.o
+.PHONY : src/main2.cpp.o
 
-test.i: test.cpp.i
+src/main2.i: src/main2.cpp.i
 
-.PHONY : test.i
+.PHONY : src/main2.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
-.PHONY : test.cpp.i
+src/main2.cpp.i:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/src/main2.cpp.i
+.PHONY : src/main2.cpp.i
 
-test.s: test.cpp.s
+src/main2.s: src/main2.cpp.s
 
-.PHONY : test.s
+.PHONY : src/main2.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
-.PHONY : test.cpp.s
+src/main2.cpp.s:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/src/main2.cpp.s
+.PHONY : src/main2.cpp.s
+
+src/matchtemplate.o: src/matchtemplate.cpp.o
+
+.PHONY : src/matchtemplate.o
+
+# target to build an object file
+src/matchtemplate.cpp.o:
+	$(MAKE) -f CMakeFiles/matchtemplate.dir/build.make CMakeFiles/matchtemplate.dir/src/matchtemplate.cpp.o
+.PHONY : src/matchtemplate.cpp.o
+
+src/matchtemplate.i: src/matchtemplate.cpp.i
+
+.PHONY : src/matchtemplate.i
+
+# target to preprocess a source file
+src/matchtemplate.cpp.i:
+	$(MAKE) -f CMakeFiles/matchtemplate.dir/build.make CMakeFiles/matchtemplate.dir/src/matchtemplate.cpp.i
+.PHONY : src/matchtemplate.cpp.i
+
+src/matchtemplate.s: src/matchtemplate.cpp.s
+
+.PHONY : src/matchtemplate.s
+
+# target to generate assembly for a file
+src/matchtemplate.cpp.s:
+	$(MAKE) -f CMakeFiles/matchtemplate.dir/build.make CMakeFiles/matchtemplate.dir/src/matchtemplate.cpp.s
+.PHONY : src/matchtemplate.cpp.s
+
+src/pointer.o: src/pointer.cpp.o
+
+.PHONY : src/pointer.o
+
+# target to build an object file
+src/pointer.cpp.o:
+	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/src/pointer.cpp.o
+.PHONY : src/pointer.cpp.o
+
+src/pointer.i: src/pointer.cpp.i
+
+.PHONY : src/pointer.i
+
+# target to preprocess a source file
+src/pointer.cpp.i:
+	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/src/pointer.cpp.i
+.PHONY : src/pointer.cpp.i
+
+src/pointer.s: src/pointer.cpp.s
+
+.PHONY : src/pointer.s
+
+# target to generate assembly for a file
+src/pointer.cpp.s:
+	$(MAKE) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/src/pointer.cpp.s
+.PHONY : src/pointer.cpp.s
+
+src/test.o: src/test.cpp.o
+
+.PHONY : src/test.o
+
+# target to build an object file
+src/test.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
+
+src/test.i: src/test.cpp.i
+
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
+
+src/test.s: src/test.cpp.s
+
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
+
+src/testformat.o: src/testformat.cpp.o
+
+.PHONY : src/testformat.o
+
+# target to build an object file
+src/testformat.cpp.o:
+	$(MAKE) -f CMakeFiles/testformat.dir/build.make CMakeFiles/testformat.dir/src/testformat.cpp.o
+.PHONY : src/testformat.cpp.o
+
+src/testformat.i: src/testformat.cpp.i
+
+.PHONY : src/testformat.i
+
+# target to preprocess a source file
+src/testformat.cpp.i:
+	$(MAKE) -f CMakeFiles/testformat.dir/build.make CMakeFiles/testformat.dir/src/testformat.cpp.i
+.PHONY : src/testformat.cpp.i
+
+src/testformat.s: src/testformat.cpp.s
+
+.PHONY : src/testformat.s
+
+# target to generate assembly for a file
+src/testformat.cpp.s:
+	$(MAKE) -f CMakeFiles/testformat.dir/build.make CMakeFiles/testformat.dir/src/testformat.cpp.s
+.PHONY : src/testformat.cpp.s
+
+src/testinit.o: src/testinit.cpp.o
+
+.PHONY : src/testinit.o
+
+# target to build an object file
+src/testinit.cpp.o:
+	$(MAKE) -f CMakeFiles/testinit.dir/build.make CMakeFiles/testinit.dir/src/testinit.cpp.o
+.PHONY : src/testinit.cpp.o
+
+src/testinit.i: src/testinit.cpp.i
+
+.PHONY : src/testinit.i
+
+# target to preprocess a source file
+src/testinit.cpp.i:
+	$(MAKE) -f CMakeFiles/testinit.dir/build.make CMakeFiles/testinit.dir/src/testinit.cpp.i
+.PHONY : src/testinit.cpp.i
+
+src/testinit.s: src/testinit.cpp.s
+
+.PHONY : src/testinit.s
+
+# target to generate assembly for a file
+src/testinit.cpp.s:
+	$(MAKE) -f CMakeFiles/testinit.dir/build.make CMakeFiles/testinit.dir/src/testinit.cpp.s
+.PHONY : src/testinit.cpp.s
+
+src/testptr.o: src/testptr.cpp.o
+
+.PHONY : src/testptr.o
+
+# target to build an object file
+src/testptr.cpp.o:
+	$(MAKE) -f CMakeFiles/testptr.dir/build.make CMakeFiles/testptr.dir/src/testptr.cpp.o
+.PHONY : src/testptr.cpp.o
+
+src/testptr.i: src/testptr.cpp.i
+
+.PHONY : src/testptr.i
+
+# target to preprocess a source file
+src/testptr.cpp.i:
+	$(MAKE) -f CMakeFiles/testptr.dir/build.make CMakeFiles/testptr.dir/src/testptr.cpp.i
+.PHONY : src/testptr.cpp.i
+
+src/testptr.s: src/testptr.cpp.s
+
+.PHONY : src/testptr.s
+
+# target to generate assembly for a file
+src/testptr.cpp.s:
+	$(MAKE) -f CMakeFiles/testptr.dir/build.make CMakeFiles/testptr.dir/src/testptr.cpp.s
+.PHONY : src/testptr.cpp.s
+
+src/testqueue.o: src/testqueue.cpp.o
+
+.PHONY : src/testqueue.o
+
+# target to build an object file
+src/testqueue.cpp.o:
+	$(MAKE) -f CMakeFiles/testqueue.dir/build.make CMakeFiles/testqueue.dir/src/testqueue.cpp.o
+.PHONY : src/testqueue.cpp.o
+
+src/testqueue.i: src/testqueue.cpp.i
+
+.PHONY : src/testqueue.i
+
+# target to preprocess a source file
+src/testqueue.cpp.i:
+	$(MAKE) -f CMakeFiles/testqueue.dir/build.make CMakeFiles/testqueue.dir/src/testqueue.cpp.i
+.PHONY : src/testqueue.cpp.i
+
+src/testqueue.s: src/testqueue.cpp.s
+
+.PHONY : src/testqueue.s
+
+# target to generate assembly for a file
+src/testqueue.cpp.s:
+	$(MAKE) -f CMakeFiles/testqueue.dir/build.make CMakeFiles/testqueue.dir/src/testqueue.cpp.s
+.PHONY : src/testqueue.cpp.s
 
 # Help Target
 help:
@@ -198,14 +478,42 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... pointer"
+	@echo "... testqueue"
 	@echo "... test"
-	@echo "... pointer.o"
-	@echo "... pointer.i"
-	@echo "... pointer.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... matchtemplate"
+	@echo "... main"
+	@echo "... testformat"
+	@echo "... pointer"
+	@echo "... testptr"
+	@echo "... testinit"
+	@echo "... main2"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/main2.o"
+	@echo "... src/main2.i"
+	@echo "... src/main2.s"
+	@echo "... src/matchtemplate.o"
+	@echo "... src/matchtemplate.i"
+	@echo "... src/matchtemplate.s"
+	@echo "... src/pointer.o"
+	@echo "... src/pointer.i"
+	@echo "... src/pointer.s"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
+	@echo "... src/testformat.o"
+	@echo "... src/testformat.i"
+	@echo "... src/testformat.s"
+	@echo "... src/testinit.o"
+	@echo "... src/testinit.i"
+	@echo "... src/testinit.s"
+	@echo "... src/testptr.o"
+	@echo "... src/testptr.i"
+	@echo "... src/testptr.s"
+	@echo "... src/testqueue.o"
+	@echo "... src/testqueue.i"
+	@echo "... src/testqueue.s"
 .PHONY : help
 
 
