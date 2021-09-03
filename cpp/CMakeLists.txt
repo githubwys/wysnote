@@ -41,3 +41,12 @@ add_executable( testqueue src/testqueue.cpp )
 
 add_executable( testinit src/testinit.cpp )
 target_link_libraries(testinit  ${OpenCV_LIBS})
+
+add_executable( testopencv src/testopencv.cpp )
+target_link_libraries(testopencv  ${OpenCV_LIBS})
+
+add_executable( testjson src/testjson.cpp )
+target_link_libraries(testjson ${OpenCV_LIBS})
+
+add_executable( testusbcamera src/testusbcamera.cpp )
+target_link_libraries(testusbcamera ${OpenCV_LIBS})
